@@ -1,18 +1,17 @@
-import LeftPanel from './components/leftPanel'
+import LeftPanel from './components/LeftPanel'
 import styles from './assets/css/style.css'
-import Header from './components/header';
-import Content from './components/content';
+import Header from './components/Header';
+import Content from './components/Content';
 
 function App() {
   return (
     <div className="App">
       <LeftPanel/>
-      <div id="right-panel" className="right-panel">
+       <div id="right-panel" className="right-panel">
        <Header/>
-      
+       <Content/>
       </div>
-       
-    </div>
+   </div>
   );
 }
 

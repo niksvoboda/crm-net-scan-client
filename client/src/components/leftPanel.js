@@ -4,7 +4,6 @@ import styles from '../assets/css/style.css'
 const LeftPanel = () =>{
     //console.log(styles)
     return(
-        
         <aside id="left-panel" className="left-panel">
         <nav className="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" className="main-menu collapse navbar-collapse">
@@ -72,7 +71,8 @@ const LeftPanel = () =>{
                         </ul>
                     </li>
                     <li className="menu-title">Extras</li>
-                    <li className="menu-item-has-children dropdown">
+                    <li className="menu-title">Login</li>
+                    <li className="menu-item-has-children">
                         <a href="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i className="menu-icon fa fa-glass"></i>Pages</a>
                         <ul className="sub-menu children dropdown-menu">
                             <li><i className="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>

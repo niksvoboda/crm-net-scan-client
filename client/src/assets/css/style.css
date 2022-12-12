@@ -906,7 +906,7 @@ header.fixed-top {
   line-height: 40px;
   width: 40px;
   display: block;
-  text-align: right; }
+  text-align: left; }
 
 .search-trigger {
   background: transparent;
