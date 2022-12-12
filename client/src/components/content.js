@@ -1,11 +1,12 @@
 import React from "react";
 import styles from '../assets/css/style.css'
 
-const Content = () =>{
-
+const Content = (props) =>{
+   const {name} = props
+   console.log(name)
     return(
         <div className="content">
-         
+            {name}
          <div className="animated fadeIn">
              
                 <div className="row">

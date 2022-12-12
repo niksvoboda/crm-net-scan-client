@@ -1,59 +1,61 @@
 import React from "react";
 import styles from '../assets/css/style.css'
+import { Link } from "react-router-dom";
+import {MAIN_ROUTE, BUTTONS_ROUTE, COMPONENTS_ROUTE,BASICTABLE_ROUTE ,BASICFORM_ROUTE ,FONTAWESSOME_ROUTE , 
+    WIDGETS_ROUTE, CHARTS_ROUTE, MAPS_ROUTE, ICONS_ROUTE, LOGIN_ROUTE } from "../utils/const";
 
 const LeftPanel = () =>{
-    //console.log(styles)
+   
     return(
         <aside id="left-panel" className="left-panel">
         <nav className="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" className="main-menu collapse navbar-collapse">
                 <ul className="nav navbar-nav">
                     <li className="active">
-                        <a href="index.html"><i className="menu-icon fa fa-laptop"></i>На главную </a>
+
+                    <Link  to={MAIN_ROUTE}><i className="menu-icon fa fa-laptop"></i>На главную</Link>
+                       
                     </li>
                     <li className="menu-title">Разделы:</li>
                     <li >
-                        <a href="ui-buttons.html"> <i className="menu-icon fa fa-puzzle-piece"></i>Buttons</a>
+                        <Link  to={BUTTONS_ROUTE}><i className="menu-icon fa fa-puzzle-piece"></i>Buttons</Link>
                     </li>
                     <li >
-                        <a href="index.html"><i className="menu-icon fa fa-cogs"></i>Components </a>
+                        <Link  to={COMPONENTS_ROUTE}><i className="menu-icon fa fa-cogs"></i>Components </Link>
                     </li>
                     <li >
-                        <a href="index.html"><i className="menu-icon fa fa-table"></i>Basic Table</a>
+                        <Link  to={BASICTABLE_ROUTE}><i className="menu-icon fa fa-table"></i>Basic Table</Link>
                     </li>
                     <li >
-                        <a href="index.html"><i className="menu-icon fa fa-th"></i>Basic Form</a>
+                        <Link  to={BASICFORM_ROUTE}><i className="menu-icon fa fa-th"></i>Basic Form</Link>
                     </li>
             
                     <li className="menu-title">Операции:</li>
                     <li >
-                        <a href="index.html"><i className="menu-icon fa  fa-fort-awesome"></i>Font Awesome</a>
+                        <Link  to={FONTAWESSOME_ROUTE}><i className="menu-icon fa  fa-fort-awesome"></i>Font Awesome</Link>
                     </li>
-                    <li >
-                        <a href="index.html"><i className="menu-icon fa fa-th"></i>Basic Form</a>
+                  
+                    <li>
+                        <Link  to={WIDGETS_ROUTE}> <i className="menu-icon ti-email"></i>Widgets </Link>
                     </li>
                     <li>
-                        <a href="widgets.html"> <i className="menu-icon ti-email"></i>Widgets </a>
+                        <Link  to={CHARTS_ROUTE}> <i className="menu-icon fa fa-line-chart"></i>Charts JS</Link>
                     </li>
                     <li>
-                        <a href="widgets.html"> <i className="menu-icon fa fa-line-chart"></i>Chart JS</a>
+                        <Link  to={ MAPS_ROUTE}> <i className="menu-icon fa fa-map-o"></i>Maps</Link>
                     </li>
                     <li>
-                        <a href="widgets.html"> <i className="menu-icon fa fa-map-o"></i>Maps</a>
-                    </li>
-                    <li>
-                        <a href="widgets.html"> <i className="menu-icon fa fa-area-chart"></i>Icons</a>
+                        <Link  to={ICONS_ROUTE}> <i className="menu-icon fa fa-area-chart"></i>Icons</Link>
                     </li>
                     <li className="menu-title">Авторизация:</li>
                     <li>
-                        <a href="widgets.html"> <i className="menu-icon fa fa-sign-in"></i>Вход</a>
+                        <Link  to={LOGIN_ROUTE }> <i className="menu-icon fa fa-sign-in"></i>Вход</Link>
                     </li>
                   
                 </ul>
             </div>
         </nav>
     </aside>
-
     )
 }
 
