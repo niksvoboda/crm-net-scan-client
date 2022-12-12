@@ -1,6 +1,6 @@
 import {Navigate} from "react-router-dom";
 import {MAIN_ROUTE, BUTTONS_ROUTE, COMPONENTS_ROUTE, BASICTABLE_ROUTE ,BASICFORM_ROUTE ,FONTAWESSOME_ROUTE , 
-    WIDGETS_ROUTE, CHARTS_ROUTE, MAPS_ROUTE, ICONS_ROUTE, LOGIN_ROUTE } from "./utils/const";
+    WIDGETS_ROUTE, CHARTS_ROUTE, MAPS_ROUTE, ICONS_ROUTE, LOGIN_ROUTE } from "./utils/RouterConst";
 import Content from "./components/Content";
 
 

@@ -1,15 +1,15 @@
-import React from "react";
-import styles from '../assets/css/style.css'
+import React, { useEffect, useState } from "react";
 import avatar from "../images/avatar.png"
+import { Link} from "react-router-dom";
 
-const Header = () => {
+const Header = ({setToggle}) => {
 
- return(
+   console.log(setToggle)
+return(
     <header id="header" className="header">
     <div className="top-left">
         <div className="navbar-header">
-
-            <a id="menuToggle" className="menutoggle"><i className="fa fa-bars"></i></a>
+            <Link id="menuToggle" className="menutoggle" onClick={setToggle} ><i className="fa fa-bars"></i></Link>
         </div>
     </div>
     <div className="top-right">
@@ -22,7 +22,6 @@ const Header = () => {
                         <button className="search-close" type="submit"><i className="fa fa-close"></i></button>
                     </form>
                 </div>
-
                 <div className="dropdown for-notification">
                     <button className="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i className="fa fa-bell"></i>

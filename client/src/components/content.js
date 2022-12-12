@@ -1,5 +1,4 @@
 import React from "react";
-import styles from '../assets/css/style.css'
 import Breadcrumbs from "./Breadcrumbs";
 
 const Content = (props) =>{

@@ -1,7 +1,6 @@
 import React from "react";
-import styles from '../assets/css/style.css'
 import { Link, useLocation } from "react-router-dom";
-import {MAIN_ROUTE} from "../utils/const";
+import {MAIN_ROUTE} from "../utils/RouterConst";
 
 const Breadcrumbs = (props) =>{
     const {name} = props
