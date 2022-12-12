@@ -4,19 +4,13 @@ import { authRoutes, publicRoutes } from '../routes';
 
 const AppRouter = () =>{
     //const {user} = useContext(Context)
- 
-    return(
+ return(
         <Routes>
-      
-
-            { publicRoutes.map((p)=> 
+           { publicRoutes.map((p)=> 
                    <Route key={p.path} path = {p.path} element = {p.element}/>
                
                 )}    
-         
-          
-        </Routes>
-
+         </Routes>
     )
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from '../assets/css/style.css'
+import avatar from "../images/avatar.png"
 
 const Header = () => {
 
@@ -93,7 +94,7 @@ const Header = () => {
 
             <div className="user-area dropdown float-right">
                 <a href="#" className="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img className="user-avatar rounded-circle" src="images/admin.jpg" />
+                    <img className="user-avatar rounded-circle" src={avatar} />
                 </a>
 
                 <div className="user-menu dropdown-menu">
