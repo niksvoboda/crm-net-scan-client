@@ -1,5 +1,5 @@
 import {Navigate} from "react-router-dom";
-import { MAIN_ROUTE, MODEL_ROUTE, NODS_ROUTE, CONTAINERS_ROUTE, NETS_ROUTE, CONSOLE_ROUTE, NETCONF_ROUTE,
+import { MAIN_ROUTE, REPORTS_ROUTE, VULNERABILITES_ROUTE, MODEL_ROUTE, NODS_ROUTE, CONTAINERS_ROUTE, NETS_ROUTE, CONSOLE_ROUTE, NETCONF_ROUTE,
     LICENSECONF_ROUTE, AUDITCONF_ROUTE, USERSCONF_ROUTE, LOGIN_ROUTE, INTEGRATION_ROUTE} from "./utils/RouterConst";
 import Content from "./components/Content";
 import Dashboard from "./pages/Dashboard"
@@ -17,11 +17,13 @@ import Login from "./pages/login";
 
 export const publicRoutes = [
     {path: MAIN_ROUTE, element: <Content component={<Dashboard/>}/>},
+    {path: VULNERABILITES_ROUTE, element: <Content component={<Dashboard/>}/>},
     {path: MODEL_ROUTE, element: <Content component={<Model/>}/>},
     {path: NODS_ROUTE, element: <Content component={<Nods/>}/>},
     {path: CONTAINERS_ROUTE, element: <Content component={<Containers/>}/>},
     {path: NETS_ROUTE, element: <Content component={<Nets/>}/>},
     {path: CONSOLE_ROUTE, element: <Content component={<Console/>}/>},
+    {path: REPORTS_ROUTE, element: <Content component={<Dashboard/>}/>},
     {path: NETCONF_ROUTE, element: <Content component={<Net/>}/>},
     {path: LICENSECONF_ROUTE, element: <Content component={<License/>}/>},
     {path: AUDITCONF_ROUTE, element: <Content component={<Audit/>}/>},

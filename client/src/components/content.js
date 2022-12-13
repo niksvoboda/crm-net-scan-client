@@ -3,17 +3,18 @@ import Breadcrumbs from "./Breadcrumbs";
 
 const Content = (props) =>{
    const {component} = props
-   console.log(component)
+   
     return(
         <div>
-         <Breadcrumbs/>
+         <Breadcrumbs/> <br/>
          <div align="center" className="contetnt" style={{
             minHeight: '90vh', 
            // textAlign: 'center', 
             justifyСontent:  'center',
-            padding: '30px' 
+            padding: '30px',
+            marginTop: 30
              }}>
-            <br/><br/><br/><br/><br/>
+           
             {component}
          </div>
          </div>

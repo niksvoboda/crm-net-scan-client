@@ -1,26 +1,25 @@
 import React from "react";
 
-
 const Login = () =>{
 
     return(
-    <div class="col-lg-6">
-        <div class="d-flex justify-content-between mt-3 pl-6 pr-6 card">
-            <div class="card-header">
+    <div className="col-lg-6">
+        <div className="d-flex justify-content-between mt-3 pl-6 pr-6 card">
+            <div className="card-header">
             <strong>Вход в систему</strong>
             </div>
-            <div class="card-body card-block">
-                <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
-                    <div class="row form-group">
+            <div className="card-body card-block">
+                <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                    <div className="row form-group">
 
-                    <div class="col-12 col-md-12">
-                    <input type="email" id="email-input" name="email-input" placeholder="Enter Login" class="form-control"/>
-                    <small class="help-block form-text">Пожалуйста введите свой логин</small></div>
+                    <div className="col-12 col-md-12">
+                    <input type="email" id="email-input" name="email-input" placeholder="Enter Login" className="form-control"/>
+                    <small className="help-block form-text">Пожалуйста введите свой логин</small></div>
                     </div>
-                    <div class="row form-group">
-                    <div class="col-12 col-md-12">
-                    <input type="password" id="password-input" name="password-input" placeholder="Password" class="form-control"/>
-                    <small class="help-block form-text">Пожалуйста введите свой пароль</small></div>
+                    <div className="row form-group">
+                    <div className="col-12 col-md-12">
+                    <input type="password" id="password-input" name="password-input" placeholder="Password" className="form-control"/>
+                    <small className="help-block form-text">Пожалуйста введите свой пароль</small></div>
                     </div>
                 </form>
             </div>

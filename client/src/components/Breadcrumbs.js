@@ -7,12 +7,12 @@ const Breadcrumbs = (props) =>{
    
     const location = useLocation()
     const menu = usermenu.concat(adminmenu)
-    const result = menu.filter(menuitem => menuitem.link == location.pathname);
+    const result = menu.filter(menuitem => menuitem.link === location.pathname);
 
     return(
         <div className="breadcrumbs" style={{marginBottom: 25}}>
         <div className="breadcrumbs-inner">
-        {location.pathname === MAIN_ROUTE || location.pathname === LOGIN_ROUTE?
+            {location.pathname === MAIN_ROUTE || location.pathname === LOGIN_ROUTE?
                  <div></div> :
             <div className="row m-0">
                 <div className="col-sm-4">
