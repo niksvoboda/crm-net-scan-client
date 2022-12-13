@@ -5,7 +5,7 @@ const Integrations = () =>{
 
     return(
         <div>
-            Консоль
+            Интеграции
         </div>
     )
 }

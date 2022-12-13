@@ -12,6 +12,8 @@ const Breadcrumbs = (props) =>{
     return(
         <div className="breadcrumbs" style={{marginBottom: 25}}>
         <div className="breadcrumbs-inner">
+        {location.pathname === MAIN_ROUTE || location.pathname === LOGIN_ROUTE?
+                 <div></div> :
             <div className="row m-0">
                 <div className="col-sm-4">
                     <div className="page-header float-left">
@@ -20,8 +22,7 @@ const Breadcrumbs = (props) =>{
                         </div>
                     </div>
                 </div>
-                {location.pathname === MAIN_ROUTE || location.pathname === LOGIN_ROUTE?
-                 <div></div> :
+               
                  <div className="col-sm-8">
                  <div className="page-header float-right">
                      <div className="page-title">
@@ -33,8 +34,8 @@ const Breadcrumbs = (props) =>{
                          </ol>
                      </div>
                  </div>
-             </div>}
-            </div>
+             </div>
+            </div>}
         </div>
     </div>
     )

@@ -5,7 +5,7 @@ const License = () =>{
 
     return(
         <div>
-            Консоль
+           Лицензия
         </div>
     )
 }

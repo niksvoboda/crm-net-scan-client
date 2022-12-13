@@ -7,8 +7,13 @@ const Content = (props) =>{
     return(
         <div>
          <Breadcrumbs/>
-         <div className="contetnt" >
-            <br/><br/><br/><br/><br/><br/><br/>
+         <div align="center" className="contetnt" style={{
+            minHeight: '90vh', 
+           // textAlign: 'center', 
+            justifyСontent:  'center',
+            padding: '30px' 
+             }}>
+            <br/><br/><br/><br/><br/>
             {component}
          </div>
          </div>

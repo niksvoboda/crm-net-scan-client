@@ -5,7 +5,7 @@ const Audit = () =>{
 
     return(
         <div>
-            Консоль
+            Аудит
         </div>
     )
 }
