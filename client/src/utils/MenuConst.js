@@ -1,19 +1,20 @@
-import {BUTTONS_ROUTE, COMPONENTS_ROUTE,BASICTABLE_ROUTE ,BASICFORM_ROUTE ,FONTAWESSOME_ROUTE , 
-    WIDGETS_ROUTE, CHARTS_ROUTE, MAPS_ROUTE, ICONS_ROUTE} from "./RouterConst";
+import {  MODEL_ROUTE, NODS_ROUTE, CONTAINERS_ROUTE, NETS_ROUTE, CONSOLE_ROUTE, NETCONF_ROUTE,
+    LICENSECONF_ROUTE, AUDITCONF_ROUTE, USERSCONF_ROUTE,  INTEGRATION_ROUTE} from "./RouterConst";
 
-export   const partition =[
-        {link:BUTTONS_ROUTE, icon: 'fa-puzzle-piece', name: 'Buttons' },
-        {link:COMPONENTS_ROUTE, icon: 'fa-cogs', name: 'Components' },
-        {link:BASICTABLE_ROUTE, icon: 'fa-table', name: 'Basic Table' },
-        {link:BASICFORM_ROUTE, icon: 'fa-th', name: 'Basic Form' },
+export   const usermenu =[
+        {link:MODEL_ROUTE, icon: 'fa-puzzle-piece', name: 'Модель' },
+        {link:NODS_ROUTE, icon: 'fa-tasks', name: 'Ноды' },
+        {link:CONTAINERS_ROUTE, icon: 'fa-inbox', name: 'Контейнеры' },
+        {link:NETS_ROUTE, icon: 'fa-sitemap', name: 'Сети' },
+        {link:CONSOLE_ROUTE, icon: 'fa-terminal', name: 'Консоль' },
     ] 
  
-export   const operations =[
-       
-        {link: FONTAWESSOME_ROUTE, icon: 'fa-fort-awesome', name: 'Font Awesome' },
-        {link: WIDGETS_ROUTE, icon: 'ti-email', name: 'Widgets' },
-        {link: CHARTS_ROUTE, icon: 'fa-line-chart', name: 'Charts JS' },
-        {link: MAPS_ROUTE, icon: 'fa-map-o', name: 'Maps' },
-        {link: ICONS_ROUTE, icon: 'fa-area-chart', name: 'Icons' },
+export   const adminmenu =[
+   
+        {link: NETCONF_ROUTE, icon: 'fa-cloud-download', name: 'Сеть' },
+        {link: LICENSECONF_ROUTE, icon: ' fa-key', name: 'Лицензия' },
+        {link: AUDITCONF_ROUTE, icon: 'fa-search-plus', name: 'Аудит' },
+        {link: USERSCONF_ROUTE, icon: 'fa-group', name: 'Пользователи' },
+        {link: INTEGRATION_ROUTE, icon: 'fa-cogs', name: 'Интеграции' },
 
     ] 

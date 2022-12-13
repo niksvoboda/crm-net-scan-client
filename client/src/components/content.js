@@ -2,15 +2,16 @@ import React from "react";
 import Breadcrumbs from "./Breadcrumbs";
 
 const Content = (props) =>{
-   const {name} = props
-   console.log(name)
+   const {component} = props
+   console.log(component)
     return(
         <div>
-         <Breadcrumbs name={name}/>
-        <div className="contetnt" >
+         <Breadcrumbs/>
+         <div className="contetnt" >
             <br/><br/><br/><br/><br/><br/><br/>
-        </div>
-        </div>
+            {component}
+         </div>
+         </div>
     )
 }
 

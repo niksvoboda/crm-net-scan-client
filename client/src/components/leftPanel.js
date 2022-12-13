@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation  } from "react-router-dom";
 import MenuItem from "./MenuItem";
 import {MAIN_ROUTE, LOGIN_ROUTE } from "../utils/RouterConst";
-import { partition, operations } from "../utils/MenuConst";
+import {usermenu, adminmenu } from "../utils/MenuConst";
 
 const LeftPanel = () =>{
     const location = useLocation()
@@ -15,15 +15,15 @@ const LeftPanel = () =>{
                         <Link  to={MAIN_ROUTE}><i className="menu-icon fa fa-laptop"></i>На главную</Link>
                     </li>
                     
-                    <li className="menu-title">Разделы:</li>
+                    <li className="menu-title">Пользователь:</li>
 
-                    {partition.map(part =>
+                    {usermenu.map(part =>
                       <MenuItem key={part.name} part = {part}/>
                     )}
            
-                    <li className="menu-title">Операции:</li>
+                    <li className="menu-title">Администратор:</li>
                     
-                    {operations.map(part =>
+                    {adminmenu.map(part =>
                       <MenuItem key={part.name} part = {part}/>
                     )}
 

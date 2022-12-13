@@ -4,7 +4,7 @@ import { Link} from "react-router-dom";
 
 const Header = ({setToggle}) => {
 
-   console.log(setToggle)
+  
 return(
     <header id="header" className="header">
     <div className="top-left">
