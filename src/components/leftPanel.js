@@ -19,12 +19,12 @@ const LeftPanel = () =>{
                     <li className={location.pathname === usermenu[0].link? "active" : null}>
                         <Link  to={usermenu[0].link}><i className={'menu-icon fa ' + usermenu[0].icon}></i>{usermenu[0].name}</Link>
                     </li>
-                    <li className="menu-item-has-children dropdown">
-                        <a href="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> 
+                    <li className="menu-item-has-children dropdown show">
+                        <Link  href="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> 
                         <i className="menu-icon fa fa-puzzle-piece"></i>
                         Модель
-                        </a>
-                        <ul className="sub-menu children dropdown-menu">
+                        </Link>
+                        <ul className="sub-menu children dropdown-menu show">
                             {subMenu.map(part =>
                              <SubMenuItem key={part.name} part = {part}/>
                             )}

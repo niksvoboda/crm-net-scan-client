@@ -1,0 +1,8 @@
+.sub-menu > li.active {
+    background: #fafafa;
+}
+
+
+.sub-menu > .active > a, .sub-menu > .active > a:focus, .sub-menu > .active > a:hover {
+    color: #03a9f3;
+}

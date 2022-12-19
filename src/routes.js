@@ -1,7 +1,7 @@
 import {Navigate} from "react-router-dom";
 import { MAIN_ROUTE, REPORTS_ROUTE, VULNERABILITES_ROUTE, MODEL_ROUTE, NODS_ROUTE, CONTAINERS_ROUTE, NETS_ROUTE, CONSOLE_ROUTE, NETCONF_ROUTE,
     LICENSECONF_ROUTE, AUDITCONF_ROUTE, USERSCONF_ROUTE, LOGIN_ROUTE, INTEGRATION_ROUTE} from "./utils/RouterConst";
-import Content from "./components/Content";
+import Content from "./components/content";
 import Dashboard from "./pages/Dashboard"
 import Console from "./pages/Console";
 import Containers from "./pages/Containers";
