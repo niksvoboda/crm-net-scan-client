@@ -1,29 +1,51 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 
+import { AuthContext } from "../context"
+import logo from "../images/logo.png"
+    
 const Login = () =>{
 
+    const {isAuth, setIsAuth} = useContext(AuthContext)
+    const login =(event)=>{
+        event.preventDefault();
+        setIsAuth(true);
+        localStorage.setItem('auth', 'true');
+        console.log(isAuth);
+    }
+    useEffect(()=>{
+        document.body.className = "bg-dark"
+    }, [])
     return(
-    <div className="col-lg-6">
-        <div className="d-flex justify-content-between mt-3 pl-6 pr-6 card">
-            <div className="card-header">
-            <strong>Вход в систему</strong>
-            </div>
-            <div className="card-body card-block">
-                <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
-                    <div className="row form-group">
+    <div className="sufee-login d-flex align-content-center flex-wrap">
+        <div className="container">
+            <div className="login-content">
+                <div className="login-logo">
+                    
+                        <img className="align-content" src={logo} alt=""/>
+                    
+                </div>
+                <div className="login-form">
+                    <form onSubmit={login}>
+                        <div className="form-group">
+                            <label>Имя пользователя</label>
+                            <input type="text" className="form-control" placeholder="Введите имя..."/>
+                        </div>
+                        <div className="form-group">
+                            <label>Ваш пароль</label>
+                            <input type="password" className="form-control" placeholder="Введите пароль..."/>
+                        </div>
+                
+                        <button type="submit" className="btn btn-success btn-flat m-b-30 m-t-30">Войти</button>
+                        <div className="social-login-content">
+                            <div className="social-button">
+                                <button type="submit" className="btn facebook btn-flat btn-addon mb-3">Sign in with active directory</button>
+                            </div>
+                        </div>
 
-                    <div className="col-12 col-md-12">
-                    <input type="email" id="email-input" name="email-input" placeholder="Enter Login" className="form-control"/>
-                    <small className="help-block form-text">Пожалуйста введите свой логин</small></div>
-                    </div>
-                    <div className="row form-group">
-                    <div className="col-12 col-md-12">
-                    <input type="password" id="password-input" name="password-input" placeholder="Password" className="form-control"/>
-                    <small className="help-block form-text">Пожалуйста введите свой пароль</small></div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div> 
+        </div>
     </div>
     )
 }

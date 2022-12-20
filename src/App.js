@@ -4,35 +4,29 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import AppRouter from './components/AppRouter';
-import React, { useEffect, useState } from "react";
+import React, {  useState, useEffect } from "react";
+import { AuthContext } from "./context";
 
 function App() {
-  
-  const [togglePanel, setTogglePanel] = useState(false)
-
+  const [isAuth, setIsAuth] = useState(false);
   useEffect(()=>{
-     if(togglePanel){
-      document.body.className = "open"
-     }else {
-      document.body.className = ""
-     }
-  }, [togglePanel])
-  
-  const setToggle = () =>{
-    setTogglePanel(!togglePanel)
-  }
-
+    if(localStorage.getItem('auth')){
+      setIsAuth(true);
+    }
+  },[])
   return (
+    <div className="App">
+    <AuthContext.Provider value={{
+        isAuth,
+        setIsAuth
+        }}>  
     <BrowserRouter>
-        <div className="App">
-        <LeftPanel/>
-          <div id="right-panel" className="right-panel">
-            <Header setToggle={setToggle}/>
-            <AppRouter/>
-          </div>
-        </div>
+
+    <AppRouter/>
+
     </BrowserRouter>
-  
+    </AuthContext.Provider>
+    </div>
   );
 }
 
