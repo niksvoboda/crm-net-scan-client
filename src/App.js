@@ -1,5 +1,3 @@
-import LeftPanel from './components/leftPanel'
-import Header from './components/header';
 import {
   BrowserRouter,
 } from "react-router-dom";

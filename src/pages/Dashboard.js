@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {Bar} from "react-chartjs-2";
 import BarChart from "../components/UI/BarChart";
 import PieChart from "../components/UI/PieChart";
 

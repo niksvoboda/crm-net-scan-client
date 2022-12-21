@@ -86,7 +86,23 @@ const Users = () =>{
                                         <div className="col-12 col-md-9">
                                         <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Информация о пользователе..." className="form-control"></textarea></div>
                                     </div>
-
+                                    <hr/>
+                                    <div className="form-group">
+                                        <div className="col col-md-6">
+                                        <label for="email-input" className=" form-control-label">Выбрать роль:</label>
+                                        </div>
+                                        <div className="col-12 col-md-6">
+                                        <div className="input-group">
+                                        <div className="input-group-addon"><i className="fa fa-group"></i></div>
+                                            <select name="select" id="select" className="form-control">
+                                                <option value="0">Выбрать роль:</option>
+                                                <option value="1">Полные права</option>
+                                                <option value="2">Системный администратор</option>
+                                                <option value="3">Оператор</option>
+                                        </select>
+                                        </div>
+                                        </div>
+                                    </div>
                                     
                                     <hr/>
                                     <div className="form-group">
@@ -100,14 +116,14 @@ const Users = () =>{
                                                 <option value="0">Выбрать тип:</option>
                                                 <option value="1">Логин и пароль системы</option>
                                                 <option value="2">Учетная запись Active Directory</option>
-                                             
-                                            </select>
+                                        </select>
                                         </div>
                                         </div>
                                     </div>
                                     <hr/>
                                     <div className="row form-group">
-                                                                           </div>
+
+                                    </div>
 
                                     <div class="row form-group">
                                         <div class="col col-md-3"><label class=" form-control-label">Права пользователя:</label></div>
