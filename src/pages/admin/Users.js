@@ -53,43 +53,43 @@ const Users = () =>{
                                     <strong>Добавить пользователя:</strong>
                                 </div>
                                 <div className="card-body card-block">
-                                    <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                                    <form action="#" method="post" encType="multipart/form-data" className="form-horizontal">
                                  
                                     <div className="row form-group">
-                                        <div className="col col-md-3"><label for="text-input" className=" form-control-label">Имя:</label></div>
+                                        <div className="col col-md-3"><label htmlFor="text-input" className=" form-control-label">Имя:</label></div>
                                         <div className="col-12 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="Укажите имя..." className="form-control"/></div>
                                         </div>
                                     <div className="row form-group">
-                                        <div className="col col-md-3"><label for="text-input" className=" form-control-label">Фамилия:</label></div>
+                                        <div className="col col-md-3"><label htmlFor="text-input" className=" form-control-label">Фамилия:</label></div>
                                         <div className="col-12 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="Укажите  фамилию..." className="form-control"/></div>
                                     
                                     </div>
                                     <div className="row form-group">
-                                        <div className="col col-md-3"><label for="email-input" className=" form-control-label">Должность:</label></div>
+                                        <div className="col col-md-3"><label htmlFor="email-input" className=" form-control-label">Должность:</label></div>
                                         <div className="col-12 col-md-3">
                                         <input type="text" id="text-input" name="text-input" placeholder="Укажите примечание..." className="form-control"/></div>
                                     </div>
                                     <hr/>
                                     <div className="row form-group">
-                                        <div className="col col-md-3"><label for="text-input" className=" form-control-label">Логин:</label></div>
+                                        <div className="col col-md-3"><label htmlFor="text-input" className=" form-control-label">Логин:</label></div>
                                         <div className="col-12 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="Укажите логин..." className="form-control"/></div>
                                     
                                     </div>
                                     <div className="row form-group">
-                                        <div className="col col-md-3"><label for="email-input" className=" form-control-label">Пароль:</label></div>
+                                        <div className="col col-md-3"><label htmlFor="email-input" className=" form-control-label">Пароль:</label></div>
                                         <div className="col-12 col-md-3">
                                         <input type="text" id="text-input" name="text-input" placeholder="Укажите пароль..." className="form-control"/></div>
                                     </div>
                                     <hr/>
                                     <div className="row form-group">
-                                        <div className="col col-md-3"><label for="textarea-input" className=" form-control-label">Примечания:</label></div>
+                                        <div className="col col-md-3"><label htmlFor="textarea-input" className=" form-control-label">Примечания:</label></div>
                                         <div className="col-12 col-md-9">
                                         <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Информация о пользователе..." className="form-control"></textarea></div>
                                     </div>
                                     <hr/>
                                     <div className="form-group">
                                         <div className="col col-md-6">
-                                        <label for="email-input" className=" form-control-label">Выбрать роль:</label>
+                                        <label htmlFor="email-input" className=" form-control-label">Выбрать роль:</label>
                                         </div>
                                         <div className="col-12 col-md-6">
                                         <div className="input-group">
@@ -107,7 +107,7 @@ const Users = () =>{
                                     <hr/>
                                     <div className="form-group">
                                         <div className="col col-md-6">
-                                        <label for="email-input" className=" form-control-label">Тип авторизации:</label>
+                                        <label htmlFor="email-input" className=" form-control-label">Тип авторизации:</label>
                                         </div>
                                         <div className="col-12 col-md-6">
                                         <div className="input-group">
@@ -125,33 +125,33 @@ const Users = () =>{
 
                                     </div>
 
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label class=" form-control-label">Права пользователя:</label></div>
-                                        <div class="col col-md-9">
-                                            <div class="form-check">
-                                                <div class="checkbox">
-                                                    <label for="checkbox1" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"/>Уязвимости
+                                    <div className="row form-group">
+                                        <div className="col col-md-3"><label className=" form-control-label">Права пользователя:</label></div>
+                                        <div className="col col-md-9">
+                                            <div className="form-check">
+                                                <div className="checkbox">
+                                                    <label htmlFor="checkbox1" className="form-check-label ">
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" className="form-check-input"/>Уязвимости
                                                     </label>
                                                 </div>
-                                                <div class="checkbox">
-                                                    <label for="checkbox2" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"/>Модель
+                                                <div className="checkbox">
+                                                    <label htmlFor="checkbox2" className="form-check-label ">
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" className="form-check-input"/>Модель
                                                     </label>
                                                 </div>
-                                                <div class="checkbox">
-                                                    <label for="checkbox3" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"/>Ноды
+                                                <div className="checkbox">
+                                                    <label htmlFor="checkbox3" className="form-check-label ">
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" className="form-check-input"/>Ноды
                                                     </label>
                                                 </div>
-                                                <div class="checkbox">
-                                                    <label for="checkbox3" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"/>Контейнеры
+                                                <div className="checkbox">
+                                                    <label htmlFor="checkbox3" className="form-check-label ">
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" className="form-check-input"/>Контейнеры
                                                     </label>
                                                 </div>
-                                                <div class="checkbox">
-                                                    <label for="checkbox3" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"/>Консоль
+                                                <div className="checkbox">
+                                                    <label htmlFor="checkbox3" className="form-check-label ">
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" className="form-check-input"/>Консоль
                                                     </label>
                                                 </div>
                                             </div>

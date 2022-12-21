@@ -11,14 +11,14 @@ const License = () =>{
                    <strong>Активация лицензии:</strong>
                  </div>
                  <div className="card-body card-block">
-                   <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                   <form action="#" method="post" encType="multipart/form-data" className="form-horizontal">
                    <div className="row form-group">
                        <div className="col-12 col-md-12">
                         <label className=" form-control-label">Загрузить сертификат из файла:</label></div>
                      </div>
                      <div className="row form-group">
                        <div className="col col-md-3">
-                         <label for="file-input" className=" form-control-label">Файл сертификата:</label>
+                         <label htmlFor="file-input" className=" form-control-label">Файл сертификата:</label>
                          </div>
                        <div className="col-12 col-md-9"><input type="file" id="file-input" name="file-input" className="form-control-file"/></div>
                      </div>
@@ -31,7 +31,7 @@ const License = () =>{
                      </div>
 
                      <div className="row form-group">
-                       <div className="col col-md-3"><label for="text-input" className=" form-control-label">Ключ:</label></div>
+                       <div className="col col-md-3"><label htmlFor="text-input" className=" form-control-label">Ключ:</label></div>
                        <div className="col-12 col-md-9">
                          <input type="text" id="text-input" name="text-input" placeholder="Укажите ключ..." className="form-control"/><small className="form-text text-muted">не более 256 символов</small></div>
                      </div>
@@ -52,7 +52,7 @@ const License = () =>{
                    <strong>Информация о лицензии:</strong>
                  </div>
                  <div className="card-body card-block">
-                   <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                   <form action="#" method="post" encType="multipart/form-data" className="form-horizontal">
                     <div className="row form-group">
                        <div className="col-12 col-md-12">
                         <label className=" form-control-label">

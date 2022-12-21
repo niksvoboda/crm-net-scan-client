@@ -1,4 +1,4 @@
-import React, {  useContext } from "react";
+import React, {  useContext, useEffect,  useState } from "react";
 import { Link, useLocation  } from "react-router-dom";
 import MenuItem from "./MenuItem";
 import SubMenuItem from "./SubMenuItem";
@@ -14,6 +14,28 @@ const LeftPanel = () =>{
         setIsAuth(false);
         localStorage.removeItem('auth');
     }
+  
+    const [dropClass, setDropClass] = useState('menu-item-has-children dropdown show')
+    const [subDropClass, setSubDropClass] = useState('sub-menu children dropdown-menu show')
+    
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => {
+      setOpen(!open);
+    };
+
+  
+
+    useEffect(()=>{
+        if (open) {
+            setDropClass('menu-item-has-children dropdown show')  
+            setSubDropClass('sub-menu children dropdown-menu show')
+        } else {
+            setDropClass('menu-item-has-children dropdown')  
+            setSubDropClass('sub-menu children dropdown-menu')
+        }
+
+    },[open])
 
     return(
         <aside id="left-panel" className="left-panel">
@@ -26,12 +48,12 @@ const LeftPanel = () =>{
                     <li className={location.pathname === usermenu[0].link? "active" : null}>
                         <Link  to={usermenu[0].link}><i className={'menu-icon fa ' + usermenu[0].icon}></i>{usermenu[0].name}</Link>
                     </li>
-                    <li className="menu-item-has-children dropdown" >
-                        <Link href="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> 
+                    <li className={dropClass} >
+                        <Link href="#" className="dropdown-toggle" aria-haspopup="true" aria-expanded="true" onClick={handleOpen}> 
                         <i className="menu-icon fa fa-puzzle-piece"></i>
                         Модель
                         </Link>
-                        <ul className="sub-menu children dropdown-menu">
+                        <ul className={subDropClass}>
                             {subMenu.map(part =>
                              <SubMenuItem key={part.name} part = {part}/>
                             )}

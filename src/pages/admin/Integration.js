@@ -111,14 +111,14 @@ const Integrations = () =>{
                         <strong>Включение возможности входа по LDAP:</strong>
                         </div>
                         <div className="card-body card-block">
-                        <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                        <form action="#" method="post" encType="multipart/form-data" className="form-horizontal">
                             <div className="row form-group">
                             <div className="col-12 col-md-12">
                                 <label className=" form-control-label"> Статус: <strong>Активно</strong></label></div>
                             </div>
                             <div className="row form-group">
                            
-                            <div className="col col-md-3"><label for="text-input" className=" form-control-label">Найстроки:</label></div>
+                            <div className="col col-md-3"><label htmlFor="text-input" className=" form-control-label">Найстроки:</label></div>
                             <div className="col-12 col-md-9">
                                 <input type="text" id="text-input" name="text-input" placeholder="Укажите ..." className="form-control"/>
                             </div>

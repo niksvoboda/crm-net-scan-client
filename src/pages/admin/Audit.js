@@ -74,13 +74,13 @@ const Audit = () =>{
                         <strong>Добавить сервер бэкапов логов:</strong>
                         </div>
                         <div className="card-body card-block">
-                        <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                        <form action="#" method="post" encType="multipart/form-data" className="form-horizontal">
                         <div className="row form-group">
                             <div className="col-12 col-md-12">
                                 <label className=" form-control-label">Укажите путь:</label></div>
                             </div>
                             <div className="row form-group">
-                            <div className="col col-md-3"><label for="text-input" className=" form-control-label">Путь:</label></div>
+                            <div className="col col-md-3"><label htmlFor="text-input" className=" form-control-label">Путь:</label></div>
                             <div className="col-12 col-md-9">
                                 <input type="text" id="text-input" name="text-input" placeholder="Укажите путь..." className="form-control"/>
                                 <small className="form-text text-muted">ex: http://10.10.1.79:3000/audits/writepath</small></div>

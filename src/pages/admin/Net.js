@@ -11,22 +11,22 @@ const Net = () =>{
                 <strong>Загрузить сертфикат SSL</strong>
               </div>
               <div className="card-body card-block">
-                <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                <form action="#" method="post" encType="multipart/form-data" className="form-horizontal">
                   <div className="row form-group">
                     <div className="col-12 col-md-12"><label className=" form-control-label">Загрузить сертификат:</label></div>
                   </div>
                   <div className="row form-group">
-                    <div className="col col-md-3"><label for="text-input" className=" form-control-label">Имя:</label></div>
+                    <div className="col col-md-3"><label htmlFor="text-input" className=" form-control-label">Имя:</label></div>
                     <div className="col-12 col-md-9">
                       <input type="text" id="text-input" name="text-input" placeholder="Укажите имя сертифика..." className="form-control"/><small className="form-text text-muted">не более 256 символов</small></div>
                   </div>
                   <div className="row form-group">
-                    <div className="col col-md-3"><label for="email-input" className=" form-control-label">Примечание:</label></div>
+                    <div className="col col-md-3"><label htmlFor="email-input" className=" form-control-label">Примечание:</label></div>
                     <div className="col-12 col-md-9">
                       <input type="text" id="text-input" name="text-input" placeholder="Укажите примечание..." className="form-control"/><small className="form-text text-muted">не более 256 символов</small></div>
                   </div>
                   <div className="row form-group">
-                    <div className="col col-md-3"><label for="textarea-input" className=" form-control-label">Сертификат:</label></div>
+                    <div className="col col-md-3"><label htmlFor="textarea-input" className=" form-control-label">Сертификат:</label></div>
                     <div className="col-12 col-md-9">
                       <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Вставить содержимое сертификата..." className="form-control"></textarea></div>
                   </div>
@@ -36,7 +36,7 @@ const Net = () =>{
                   </div>
                   <div className="row form-group">
                     <div className="col col-md-4">
-                      <label for="file-input" className=" form-control-label">Файл сертификата:</label>
+                      <label htmlFor="file-input" className=" form-control-label">Файл сертификата:</label>
                       </div>
                     <div className="col-12 col-md-8"><input type="file" id="file-input" name="file-input" className="form-control-file"/></div>
                   </div>
@@ -59,16 +59,16 @@ const Net = () =>{
                 <strong>Настройка портов:</strong>
               </div>
               <div className="card-body card-block">
-                <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                <form action="#" method="post" encType="multipart/form-data" className="form-horizontal">
 
                   <div className="row form-group">
                     <div className="col col-md-6">
-                        <label for="text-input" className=" form-control-label">Порт фронтенда:</label></div>
+                        <label htmlFor="text-input" className=" form-control-label">Порт фронтенда:</label></div>
                     <div className="col-12 col-md-6">
                       <input type="number" id="text-input" name="text-input" placeholder="3000" className="form-control"/><small className="form-text text-muted">Допустимый диапазон: 1-65535</small></div>
                   </div>
                   <div className="row form-group">
-                    <div className="col col-md-6"><label for="email-input" className=" form-control-label">Порт бэкенда:</label></div>
+                    <div className="col col-md-6"><label htmlFor="email-input" className=" form-control-label">Порт бэкенда:</label></div>
                     <div className="col-12 col-md-6">
                       <input type="number" id="text2-input" name="text-input" placeholder="5000" className="form-control"/><small className="form-text text-muted">Допустимый диапазон: 1-65535</small></div>
                   </div>
@@ -91,9 +91,9 @@ const Net = () =>{
               <div className="row form-group">
                     <div className="col-12 col-md-12"><label className=" form-control-label">Установить сертификат:</label></div>
                   </div>
-                <form action="#" method="post" enctype="multipart/form-data" className="form-horizontal">
+                <form action="#" method="post" encType="multipart/form-data" className="form-horizontal">
                   <div className="row form-group">
-                    <div className="col col-md-3"><label for="select" className=" form-control-label">Выбрать</label></div>
+                    <div className="col col-md-3"><label htmlFor="select" className=" form-control-label">Выбрать</label></div>
                     <div className="col-12 col-md-9">
                       <select name="select" id="select" className="form-control">
                         <option value="0">Выберите сертификат</option>
