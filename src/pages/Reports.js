@@ -44,7 +44,8 @@ const Reports = () =>{
 
                             <div className="card-body">
                             <div className="col-xs-6 col-sm-6">
-                        <div className="card">
+                            
+                            <div className="card">
                             <div className="card-header">
                                 <strong>Make report:</strong> <small> Risks</small>
                             </div>

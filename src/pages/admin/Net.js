@@ -42,7 +42,7 @@ const Net = () =>{
                   </div>
                   <hr/>
                   <div className="form-actions form-group"><br/>
-                  <button type="submit" className="btn btn-primary btn-sm">ЗАГРУЗИТЬ</button>
+                  <button type="submit" className="btn btn-danger btn-sm"><li className="fa fa-cloud-upload"></li> ЗАГРУЗИТЬ</button> 
                   </div>
           </form> 
           </div>
