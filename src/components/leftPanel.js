@@ -1,4 +1,4 @@
-import React, { useEffect, useState,  useContext } from "react";
+import React, {  useContext } from "react";
 import { Link, useLocation  } from "react-router-dom";
 import MenuItem from "./MenuItem";
 import SubMenuItem from "./SubMenuItem";
@@ -9,23 +9,24 @@ import { AuthContext } from "../context/index.js";
 const LeftPanel = () =>{
     const location = useLocation()
     const subMenu = usermenu.slice(2,5)
-    const {isAuth, setIsAuth} = useContext(AuthContext)
+    const {setIsAuth} = useContext(AuthContext)
     const logOut =(event)=>{
         setIsAuth(false);
         localStorage.removeItem('auth');
     }
+
     return(
         <aside id="left-panel" className="left-panel">
         <nav className="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" className="main-menu collapse navbar-collapse">
                 <ul className="nav navbar-nav">
                     <li className={location.pathname === MAIN_ROUTE? "active" : null}>
-                        <Link  to={MAIN_ROUTE}><i className="menu-icon fa fa-laptop"></i>Панель управления</Link>
+                        <Link  to={MAIN_ROUTE}><i className="menu-icon fa fa-laptop"></i>Общее состояние</Link>
                     </li>
                     <li className={location.pathname === usermenu[0].link? "active" : null}>
                         <Link  to={usermenu[0].link}><i className={'menu-icon fa ' + usermenu[0].icon}></i>{usermenu[0].name}</Link>
                     </li>
-                    <li className="menu-item-has-children dropdown">
+                    <li className="menu-item-has-children dropdown" >
                         <Link href="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> 
                         <i className="menu-icon fa fa-puzzle-piece"></i>
                         Модель

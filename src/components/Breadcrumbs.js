@@ -18,7 +18,7 @@ const Breadcrumbs = (props) =>{
                 <div className="col-sm-4">
                     <div className="page-header float-left">
                         <div className="page-title">
-                            <h1>Dashboard</h1>
+                            <h1>ПАНЕЛЬ УПРАВЛЕНИЯ</h1>
                         </div>
                     </div>
                 </div>

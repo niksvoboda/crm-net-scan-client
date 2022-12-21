@@ -1,7 +1,7 @@
 export const MAIN_ROUTE = '/'
 export const VULNERABILITES_ROUTE = '/vulnerabilities'
 export const MODEL_ROUTE = '/model' 
-export const NODS_ROUTE = '/nods'
+export const NODS_ROUTE = '/nodes'
 export const CONTAINERS_ROUTE = '/containers'
 export const NETS_ROUTE = '/nets'
 export const CONSOLE_ROUTE = '/console'

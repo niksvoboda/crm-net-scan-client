@@ -1,42 +1,70 @@
-import React from "react";
-
+import React, { useState } from "react";
+import {Bar} from "react-chartjs-2";
+import BarChart from "../components/UI/BarChart";
+import PieChart from "../components/UI/PieChart";
 
 const Dashboard = () =>{
+    const UserData = [
+        {
+        id:1,
+        year:"Security score",
+        userGain: 0.9,
+        userLost: 823,
+        },
+        {
+        id:2,
+        year:"Risks",
+        userGain: 0.14,
+        userLost: 823,
+        },
+        {
+        id:3,
+        year:"Complianse score",
+        userGain: 0.73,
+        userLost: 823,
+        }
+    ]
 
+    const [userData, setUserData] = useState({
+        labels: UserData.map((data)=> data.year),
+        datasets:[{
+            label:"Vulnerability",
+            data: UserData.map((data)=> data.userGain),
+            backgroundColor:[
+                "#FF0C00",
+                "#4EFF44",
+                "#FFFA00",
+            ],
+            borderColor: "#C0C0C0",
+            borderWidth: 1,
+        }]
+    })
+    console.log(userData)
     return(
-        <div className="col-lg-12">
-        <div className="card">
+        <div className="col-lg-12 row">
+        <div className="card col-md-5" style={{height:'400px'}}>
+            
             <div className="card-header">
-                <h4>Setting Colours Dynamically</h4>
+                <h4>Vulnerability control</h4>
             </div>
-            <div className="card-body">
-                <div className="row">
-                    <div className="col-lg-3">
-                        <span className="bar-colours-1">5,3,9,6,5,9,7,3,5,2</span>
-                    </div>
-                    <div className="col-lg-3">
-                        <span className="bar-colours-2">5,3,2,-1,-3,-2,2,3,5,2</span>
-                    </div>
-                    <div className="col-lg-3">
-                        <span className="bar-colours-3">0,-3,-6,-4,-5,-4,-7,-3,-5,-2</span>
-                    </div>
-                    <div className="col-lg-3">
-                        <span className="pie-colours-2">5,3,9,6,5</span>
-                    </div>
-                </div>
+            <div className="card-body" >
+                 <BarChart chartData={userData} />
+                 
             </div>
         </div>
-        
-            <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
-            <script src="http://localhost:3000/assets/js/main.js"></script>
+        <div className="col-md-2" >
 
-            <script src="https://cdn.jsdelivr.net/npm/peity@3.3.0/jquery.peity.min.js"></script>
-           
-            <script src="http://localhost:3000/assets/js/init/peitychart-init.js"></script>
-    </div>
+        </div>
+        <div className="card col-md-5" style={{height:'400px'}}>
+            
+            <div className="card-header">
+                <h4>Vulnerability control</h4>
+            </div>
+            <div className="card-body">
+                 <PieChart chartData={userData} />
+            </div>
+        </div>
+        </div>
     )
 }
 
